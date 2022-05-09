@@ -8,7 +8,8 @@ import CloseIcon from '../../../assets/icons/close.svg';
 
 const ListTile = props => {
     return <SwipeRow
-        leftOpenValue={0}
+        leftOpenValue={0.00001}
+        stopLeftSwipe={0.00001}
         closeOnRowPress={false}
         stopRightSwipe={props.statusText == "Draft" ? -80 : -160}
         rightOpenValue={props.statusText == "Draft" ? -80 : -160}
